@@ -1,0 +1,461 @@
+/* настройка для всей работы */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: auto;
+}
+a, li, ul{
+    list-style: none;
+    text-decoration: none;
+}
+/* ширина контейнера и его расположение по центру */
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+/* добавление шрифта */
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/Manrope-Regular.ttf") format("truetype");
+    font-weight: 500;
+}
+hr{
+    background-color: black;
+    height: 3px;
+}
+body{
+    font-family: Manrope;
+    font-size: 17px;
+}
+/*  */
+.header_wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.header_wrap2{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.lang_header{
+    display: flex;
+    width: 85px;
+    justify-content: space-between;
+}
+.header_lang{
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+.not{
+    color: gray;
+}
+.header_lang:hover{
+    text-decoration: underline;
+}
+.header_logo{
+    color: black;
+    font-weight: 600;
+}
+.header_icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+.header_link{
+    color: black;
+    cursor: pointer;
+    font-weight: 500;
+}
+.header_link:hover{
+    color: gray;
+}
+.header_col{
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+}
+/*  */
+.main_wrap{
+    padding-bottom: 168px;
+}
+.main_title{
+    font-size: 153px;
+    font-weight: 600;
+}
+.main_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main_subt{
+    margin-top: 77px;
+    margin-right: 35px;
+    font-weight: 600;
+}
+/*  */
+.main_title2{
+    font-size: 66px;
+    font-weight: 600;
+}
+.all_wrap{
+    padding-bottom: 160px;
+}
+.all_blocks{
+    margin-top: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.all_block{
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+}
+.all_block:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+.all_link{
+    color: black;
+    font-weight: 600;
+    margin-top: 10px;
+}
+/*  */
+.col{
+    background: url("../img/section3/6.jpg") no-repeat center center / cover;
+}
+.col_wrap{
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 335px;
+}
+.col_title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 30px;
+}
+.all_text{
+    color: white;
+    margin-bottom: 30px;
+}
+.all_btn{
+    color: black;
+    text-transform: uppercase;
+    padding: 24px 50px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 1s;
+}
+.all_btn:hover{
+    transition: 1s;
+    color: white;
+    background-color: #7593a6;
+    border: 1px solid white;
+}
+/*  */
+.news_wrap{
+    padding-top: 165px;
+    padding-bottom: 120px;
+}
+.news_title{
+    font-weight: 600;font-size: 66px;
+
+}
+.new{
+    display: flex;
+    justify-content: right;
+    margin-bottom: 58px;
+}
+.news_blocks{
+    display: flex;
+    justify-content: space-between;
+}
+.news_block2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*  */
+.obj_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.obj_block{
+    margin-left: 20px;
+}
+.obj_names{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.obj_name{
+    font-size: 45px;
+    font-weight: 600;
+}
+.obj_stars{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    justify-content: space-between;
+}
+.obj_star_obj{
+    color: gray;
+}
+.obj_subt{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.obj_sizes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.obj_size_text{
+    font-size: 15px;font-weight: 600;
+}
+.obj_size_table{
+    text-decoration: underline;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+}
+.size{
+    height: 40px;
+    font-family: Manrope;
+    width: 550px;
+    padding-left: 20px;
+    display: flex;
+    color: gray;
+    margin-bottom: 50px;
+    border: 1px solid rgb(184, 183, 183);
+}
+.obj_prices{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.obj_price{
+    font-size: 32px;
+}
+.promo{
+    width: 270px;
+    height: 40px;
+    color: gray;
+    border: 1px solig rgb(163, 163, 163);
+    padding-left: 20px;
+}
+.obj_btn{
+    width: 550px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border: 1px solid transparent;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin: 40px 0;
+    transition: 1s;
+}
+.obj_btn:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+.obj_links{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(179, 179, 179);
+    width: 300px;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.obj_link{
+    color: gray;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 1s;
+}
+.obj_link:hover{
+    color: black;
+    transition: 1s;
+}
+.links{
+    color: black;
+}
+.obj_text{
+    font-weight: 600;
+}
+/*  */
+.opt{
+    background-color: black;
+    color: white;
+    margin: 120px 0;
+}
+.opt_wrap{
+    display: flex;
+    padding: 60px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.opt_icon{
+    margin-bottom: 40px;
+    animation:opt_icon 3s infinite;
+    transition: 1s;
+}
+@keyframes opt_icon {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.05;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.opt_name{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.opt_subt{
+    font-size: 18px;
+    font-weight: 500;
+}
+/*  */
+.about_wrap{
+    margin-bottom: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about_img{
+    margin-right: 50px;
+}
+.about_title{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 65px;
+}
+.about_text{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 35px;
+}
+/* spam */
+.spam{
+    background-color: black;
+    color: white;
+}
+.spam_title{
+    font-weight: 600;font-size: 66px;
+}
+.spam_blocks{
+    display: flex;
+    justify-content: space-between;
+}
+.spam_block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.spam_text{
+    font-size: 18px;
+    margin-bottom: 48px;
+}
+.spam_input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+.spam_input_text{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.spam_inputs{
+    background-color: black;
+    border: 1px solid rgb(197, 197, 197);
+    color: rgb(197, 197, 197);
+    padding: 13px ;
+}
+.spam_spam{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.spam_radios{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.radio_text{
+    margin-left: 3px;
+    font-size: 12px;margin-right: 10px;
+}
+.spam_checks{
+    display: flex;
+    align-items: center;
+}
+.check_spam{
+    font-size: 13px;
+    margin-left: 5px;
+}
+.spam_btn{
+    padding: 23px 0;
+    transition: 1s;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 36px;
+    border: 1px solid transparent;
+}
+.spam_btn:hover{
+    border: 1px solid white;
+    transition: 1s;
+    color: white;
+    background-color: black;
+}
+.spam_wrap{
+    padding-bottom: 100px;
+}
+.hr2{
+    height: 3px;
+    background-color: white;
+}
+/*  */
+.footer{
+    background-color: black;
+}
+.footer_wrap{
+    display: flex;
+    align-items: center;
+    padding: 85px;
+    justify-content: space-between;
+}
+.foot_text{
+    font-size: 10px;
+    color: white;
+}
+.footer_icons{
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+}
+.footer_pol{
+    text-decoration: underline;
+    font-size: 10px;
+    color: white;
+}
+.footer_pol:hover{
+    color: gray;
+}
